@@ -1,0 +1,40 @@
+Here's an example of how a class and object work in C++:
+
+#include<bits/stdc++.h>
+using namespace std;
+
+// Class definition
+class Rectangle {
+public:
+    int width;
+    int height;
+
+
+    // Constructor
+    Rectangle(int w, int h) {
+        width = w;
+        height = h;
+    }
+
+    // Method to calculate area
+    int calculateArea() {
+        return width * height;
+    }
+};
+
+int main() {
+    // Object declaration
+    Rectangle myRectangle(5, 10);  // Creating an object of the Rectangle class
+
+    // Accessing object members
+    int area = myRectangle.calculateArea();
+    std::cout << "Area: " << area << std::endl;
+
+    return 0;
+}
+
+In this example, we define a class called Rectangle. The class has two public member variables width and height, and two public member functions: a constructor and a method to calculate the area of the rectangle.
+
+To declare an object of the Rectangle class, we use the class name followed by the object name and parentheses. In the main() function, we declare an object named myRectangle by invoking the constructor of the Rectangle class and passing the initial values for width and height.
+
+Once the object is created, we can access its members using the dot operator (.). In this case, we call the calculateArea() method on the myRectangle object to calculate the area of the rectangle.
